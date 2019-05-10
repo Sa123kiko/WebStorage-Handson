@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<title>Login</title>
+	<meta charset="UTF-8" />
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.css" />
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.js"></script> -->
+	<link rel="stylesheet" href="./src/styles.css" />
+</head>
+
+<body>
+	<div class="ui middle aligned center aligned grid">
+		<div class="column">
+			<h2 class="ui teal image header">
+				<div class="content">
+					Log-in to your account
+				</div>
+			</h2>
+			<div class="ui large form">
+				<div class="ui stacked segment">
+					<div class="field">
+						<div class="ui left icon input">
+							<i class="user icon"></i>
+							<input type="text" id="userId" name="userId" placeholder="User ID" />
+						</div>
+					</div>
+					<div class="field">
+						<div class="ui left icon input">
+							<i class="lock icon"></i>
+							<input type="password" id="password" name="password" placeholder="Password" />
+						</div>
+					</div>
+					<button id="login" class="ui button fluid large teal">
+						Login
+					</button>
+				</div>
+
+				<div class="ui error message"></div>
+			</div>
+		</div>
+	</div>
+
+	<script src="src/index.js"></script>
+</body>
+
+</html>
